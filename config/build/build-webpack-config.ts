@@ -1,4 +1,4 @@
-import { buildDevServer } from "./build-dev-derver";
+import { buildDevServer } from "./build-dev-server";
 import { buildLoaders } from "./build-loaders";
 import { buildPlagins } from "./build-plagins";
 import { buildResolvers } from "./build-resolvers";
