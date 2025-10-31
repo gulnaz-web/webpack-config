@@ -13,6 +13,7 @@ const config: webpack.Configuration = buildWebpackConfig({
   },
   mode,
   isDev,
+  port: 3000,
 });
 
 export default config;

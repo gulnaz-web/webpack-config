@@ -6,8 +6,9 @@ export type BuildPaths = {
   html: string;
 };
 
-export type buildOptions = {
+export type BuildOptions = {
   mode: BuildMode;
   paths: BuildPaths;
   isDev: boolean;
+  port: number;
 };
