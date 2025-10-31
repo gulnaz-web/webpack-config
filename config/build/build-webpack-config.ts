@@ -12,8 +12,8 @@ export const buildWebpackConfig = (options: BuildOptions) => {
       rules: buildLoaders(),
     },
     resolve: buildResolvers(),
-    devtool: "inline-source-map",
-    devServer: buildDevServer(options),
+    devtool: options.isDev ? "inline-source-map" : undefined,
+    devServer: options.isDev ? buildDevServer(options) : undefined,
     plugins: buildPlagins(options.paths),
     output: {
       filename: "[contenthash].[name].js",
